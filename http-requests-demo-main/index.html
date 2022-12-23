@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Http Networking</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <!-- <script src="assets/scripts/app.js" defer></script> -->
+    <script src="assets/scripts/axioss.js" defer></script>
+</head>
+
+<body class="body">
+    <!-- <img src="assets/images/backgroundpic.jpg" alt="none"> -->
+    <template id="single-post">
+        <li class="post-item">
+            <h2></h2>
+            <p></p>
+            <button>DELETE</button>
+        </li>
+    </template>
+    <section id="new-post" class="sec-1" style="margin-top: 3rem;">
+        <div class="image">
+            <img src="assets/images/sidephoto.jpg" alt="">
+        </div>
+
+
+        <div class="form">
+            <form>
+                <h2>Welcome to Commodity</h2>
+                <p>Come and add your data</p>
+                <br>
+                <div class="form-control">
+                    <label for="title">Username</label>
+                    <input type="text" id="title" />
+                    <label for="title">Market ID</label>
+                    <input type="text" id="title" />
+                    <label for="title">Market Name</label>
+                    <input type="text" id="title" />
+                    <label for="title">Commodity ID</label>
+                    <input type="text" id="title" />
+                    <label for="title">Commodity Name</label>
+                    <input type="text" id="title" />
+                    <label for="title">Price</label>
+                    <input type="text" id="title" />
+                </div>
+                <!-- <div class="form-control">
+                    <label for="content">Content</label>
+                    <textarea rows="3" id="content"></textarea>
+                </div> -->
+                <div class="submit">
+
+                    <button type="submit" class="sub-but">ADD</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="available-posts" class="sec-2" style="background-color: white; height: fit-content; width: 63vw;">
+        <div class="buttons">
+            <div>
+                <button>FETCH POSTS</button>
+            </div>
+            <div class="button">
+                    No. of users data = 14
+            </div>
+        </div>
+        
+        
+        <ul class="posts"></ul>
+    </section>
+</body>
+
+</html>
